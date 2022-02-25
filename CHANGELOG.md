@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.0...v2.0.2) (2022-02-25)
+
+
+### Bug Fixes
+
+* build ([a2d64ce](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/a2d64ceed6d40d235b229188ffeb9effdda49790))
+
 ## 2.0.0 (2022-02-25)
 
 
