@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.2...v2.2.0) (2022-02-25)
+
+
+### Features
+
+* Support FLOAT ([5caab59](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/5caab59e6056abb4858d5b3953f2828dc4d41b49))
+
+# [2.1.0](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.2...v2.1.0) (2022-02-25)
+
+
+### Features
+
+* Support FLOAT ([5caab59](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/5caab59e6056abb4858d5b3953f2828dc4d41b49))
+
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ### [2.0.2](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.0...v2.0.2) (2022-02-25)
 
 

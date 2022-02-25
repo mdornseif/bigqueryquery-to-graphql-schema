@@ -1,6 +1,6 @@
 {
   "name": "bigqueryquery-to-graphql-schema",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "Generate a GraphQL Schema Definition from the Result of a Google BigQuery Query",
   "keywords": [],
   "repository": "https://github.com/mdornseif/bigqueryquery-to-graphql-schema",
