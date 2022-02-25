@@ -12,10 +12,11 @@ import { BigQuery, BigQueryOptions, Query } from '@google-cloud/bigquery';
 import { assertIsString } from 'assertate-debug';
 
 const BQ2GQL_FIELDS = {
-  STRING: 'String',
-  INTEGER: 'Int',
-  TIMESTAMP: 'DateTime',
   BOOLEAN: 'Boolean',
+  FLOAT: 'Float',
+  INTEGER: 'Int',
+  STRING: 'String',
+  TIMESTAMP: 'DateTime',
 };
 
 export async function queryToSchema(
