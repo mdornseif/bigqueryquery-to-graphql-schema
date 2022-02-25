@@ -146,6 +146,6 @@
     "@google-cloud/bigquery": "^5.11.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=12"
   }
 }
