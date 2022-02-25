@@ -16,19 +16,28 @@ const parser = new ArgumentParser({
   add_help: true,
 });
 
-parser.add_argument('--projectId', { help: 'BigQuery project ID' });
-parser.add_argument('--location', { help: 'BigQuery Dataset Location' });
-parser.add_argument('sqlfile');
+parser.add_argument('--projectId', { help: 'BigQuery project ID.' });
+parser.add_argument('--location', { help: 'BigQuery Dataset Location.' });
+parser.add_argument('sqlfile', {
+  nargs: '+',
+  help: 'Filename with a single BigQuery SQL Query.',
+});
 
 const args = parser.parse_args();
 
 async function main() {
-  return await queryFileToSchema(
-    args.sqlfile,
-    undefined,
-    { projectId: args.projectId },
-    { location: args.location }
-  );
+  const output = [];
+  for (const fname of args.sqlfile) {
+    output.push(
+      await queryFileToSchema(
+        fname,
+        undefined,
+        { projectId: args.projectId },
+        { location: args.location }
+      )
+    );
+  }
+  return output.join('\n');
 }
 
 main().then(console.log).catch(console.error);

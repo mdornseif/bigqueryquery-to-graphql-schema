@@ -14,6 +14,8 @@ import { assertIsString } from 'assertate-debug';
 const BQ2GQL_FIELDS = {
   STRING: 'String',
   INTEGER: 'Int',
+  TIMESTAMP: 'DateTime',
+  BOOLEAN: 'Boolean',
 };
 
 export async function queryToSchema(
@@ -37,7 +39,7 @@ export async function queryToSchema(
 
   const output = [`type ${typeprefix}${name} {`];
   for (const field of table.metadata.schema.fields) {
-    assertIsString(BQ2GQL_FIELDS[field.type]);
+    assertIsString(BQ2GQL_FIELDS[field.type], `BQ2GQL_FIELDS[${field.type}]`);
     if (field.mode === 'REPEATED') {
       output.push(
         `  ${field.name}: [${BQ2GQL_FIELDS[field.type]}] \t# ${JSON.stringify(
@@ -52,7 +54,11 @@ export async function queryToSchema(
       );
     }
   }
-  output.push(`}\n`);
+  output.push(`}\n
+type ${typeprefix}${name}Result {
+  rows: [${typeprefix}${name}]
+  meta: BqJobMeta
+}`);
   return output.join('\n');
 }
 
