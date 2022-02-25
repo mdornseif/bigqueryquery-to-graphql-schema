@@ -45,13 +45,13 @@ export async function queryToSchema(
       output.push(
         `  ${field.name}: [${BQ2GQL_FIELDS[field.type]}] \t# ${JSON.stringify(
           field
-        )} `
+        )}`
       );
     } else {
       output.push(
         `  ${field.name}: ${BQ2GQL_FIELDS[field.type]} \t# ${JSON.stringify(
           field
-        )} `
+        )}`
       );
     }
   }
