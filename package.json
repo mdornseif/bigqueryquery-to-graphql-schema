@@ -144,7 +144,7 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@google-cloud/bigquery": "^5.11.0"
+    "@google-cloud/bigquery": ">=5.x.x"
   },
   "engines": {
     "node": ">=12"
