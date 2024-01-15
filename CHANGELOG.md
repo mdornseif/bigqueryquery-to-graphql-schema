@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.2...v4.0.0) (2024-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* bump major version
+
+### Features
+
+* Support FLOAT ([5caab59](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/5caab59e6056abb4858d5b3953f2828dc4d41b49))
+
+
+### Bug Fixes
+
+* allow newer @google-cloud/bigquery ([3cb9bac](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/3cb9bac94651e52b53aebaad5c6c72537f7cb2c1))
+* no whitespace at lineends ([350a5aa](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/350a5aa7912fad5a6b3ed32ed8f819bf6a316131))
+* peer dependencies ([4e3c571](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/4e3c5713f111a0638de7ba29ee87716e306599f4))
+
+# [3.0.0](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.2...v3.0.0) (2024-01-15)
+
+
+### Bug Fixes
+
+* allow newer @google-cloud/bigquery ([3cb9bac](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/3cb9bac94651e52b53aebaad5c6c72537f7cb2c1))
+* no whitespace at lineends ([350a5aa](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/350a5aa7912fad5a6b3ed32ed8f819bf6a316131))
+* peer dependencies ([4e3c571](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/4e3c5713f111a0638de7ba29ee87716e306599f4))
+
+
+### Features
+
+* Support FLOAT ([5caab59](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/commit/5caab59e6056abb4858d5b3953f2828dc4d41b49))
+
+
+### BREAKING CHANGES
+
+* bump major version
+
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ### [2.0.2](https://github.com/mdornseif/bigqueryquery-to-graphql-schema/compare/v2.0.0...v2.0.2) (2022-02-25)
 
 
